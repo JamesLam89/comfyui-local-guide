@@ -2,7 +2,7 @@
 
 ![轻度本地部署看这一篇就够（NSFW 向）](images/cover.png)
 
-以成本为5000元 RTX 4060 Laptop 8GB 为背景的 ComfyUI 入门级本地简易部署生成：模型选择、LoRA 分工、安装顺序与工作流排错。
+以成本为5000元 RTX 4060 Laptop 8GB 为背景的 ComfyUI 入门级本地简易部署生成：包含模型选择、LoRA 分工、安装顺序与工作流排错。
 
 **更新日期：2026-10-22** · [完整模型与 LoRA 表格](docs/models.md) · [工作流下载与使用说明](workflows/README.md) · [常见问题](docs/troubleshooting.md)
 
@@ -29,7 +29,10 @@
 
 **Qwen 路线**：成人向人像可从一个 LoRA 开始测试，例如 TheseAlpacas、FemaledVaginus 或姿势类；先固定底模、种子和提示词，只换一个 LoRA 做 A/B 比较。追求速度时，Pruna 有 [5 步与 8 步](https://huggingface.co/PrunaAI/Pruna-Q-Image-2.1) 两个版本，作者明确说 8 步画质优先、5 步速度优先，而且各自需要对应的 sigma 与 CFG 设置。另一条 6 步路线是 [Viggle Turbo](https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo)。提速 LoRA 一次先选一个；混搭要单独验证。
 
-**编辑和控制**：参考图换人有 [BFS Head/Body](https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap)，照片保真修复有 [AusBoss Restore](https://huggingface.co/ausboss/Qwen-Image-2.1-Restore-LoRA)，需要精确姿势可以用 [VNCCS PoseStudio](https://huggingface.co/MIUProject/VNCCS_PoseStudio_QI2.1) 加对应 3D 姿势工作流。它们解决的是不同问题，不会因为同在 `loras` 文件夹就自动协同。涉及真人参考图时，先确认当事人同意。
+**编辑和控制**：参考图换人有 [BFS Head/Body](https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap)，照片保真修复有 [AusBoss Restore](https://huggingface.co/ausboss/Qwen-Image-2.1-Restore-LoRA)，需要精确姿势可以用 [VNCCS PoseStudio](https://huggingface.co/MIUProject/VNCCS_PoseStudio_QI2.1) 加对应 3D 姿势工作流。它们解决的是不同问题，不会因为同在 `loras` 文件夹就自动协同。
+再次提醒：严禁利用任何未经授权的真人图片制作任何内容！！！
+再次提醒：严禁利用任何未经授权的真人图片制作任何内容！！！
+再次提醒：严禁利用任何未经授权的真人图片制作任何内容！！！
 
 ## 实际安装顺序
 
@@ -47,7 +50,7 @@
 完整的本机 37 个文件、各 LoRA 的对应仓库与来源核实状态，见[完整模型与 LoRA 清单](docs/models.md)。工作流示例见[下载与使用说明](workflows/README.md)。
 
 ## 来源与更新
-
+本文仅作收集与归纳，全部模型及工作流来源于文中链接，不做任何商业性质
 模型、LoRA 和节点项目的作者与仓库链接列在表格中，使用和再分发请遵守各项目许可。这里的本机文件名、大小与安装状态是盘点快照，不能替代上游模型卡和安装说明。
 
 封面为 AI 生成的虚构成年女性时尚肖像。示例工作流采用普通场景提示词；仓库没有附带模型权重或私人参考图。
