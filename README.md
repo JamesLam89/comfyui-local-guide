@@ -2,7 +2,7 @@
 
 ![轻度本地部署看这一篇就够（NSFW 向）](images/cover.png)
 
-以 RTX 4060 Laptop 8GB 为背景的 ComfyUI 入门笔记：模型选择、LoRA 分工、安装顺序与工作流排错。
+以成本为5000元 RTX 4060 Laptop 8GB 为背景的 ComfyUI 入门级本地简易部署生成：模型选择、LoRA 分工、安装顺序与工作流排错。
 
 **更新日期：2026-10-22** · [完整模型与 LoRA 表格](docs/models.md) · [工作流下载与使用说明](workflows/README.md) · [常见问题](docs/troubleshooting.md)
 
