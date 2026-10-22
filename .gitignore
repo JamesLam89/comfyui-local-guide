@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.gguf
+input/
+output/
